@@ -6,4 +6,13 @@
 //  Copyright (c) 2015 Josh Hawes. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class QuizThreeViewController: UIViewController {
+    
+    
+    
+    
+    
+    
+}

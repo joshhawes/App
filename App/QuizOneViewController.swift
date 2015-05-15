@@ -10,25 +10,37 @@ import UIKit
 
 class QuizOneViewController: UIViewController {
     
-    func dismissAlert (alert: UIAlertAction!)
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+
+    }
+    
+    @IBAction func showAlert(sender: AnyObject)
     {
-        self.dismissViewControllerAnimated(true , completion: nil)
-        }
+       
+        var myAlert = UIAlertController(title: "Alert", message: "Are you sure?", preferredStyle: UIAlertControllerStyle.Alert);
+        
+        
+        let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.Default){(ACTION) in println("Ok button tapped");
+            
+            
+            
+        
+        
+    }
     
-    
+        myAlert.addAction(okAction);
 
+        
+        self.presentViewController(myAlert, animated: true, completion: nil);
+        
+        
 
-    @IBAction func openAlertView(sender: AnyObject) {
-        
-        
-        let alrtController : UIAlertController = UIAlertController(title: "Hi", message: "This is alert controller", preferredStyle:.Alert)
-        
-        let cancelAction: UIAlertAction = UIAlertAction(title: "Back", style: .Cancel, handler: dismissAlert)
-        
-        alrtController.addAction(cancelAction)
-        
-        
-        self.presentViewController(alrtController, animated: true, completion: nil)
         
     }
     
