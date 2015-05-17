@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A174CC3F1B08E7DC00160282 /* PuzzleOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A174CC3E1B08E7DC00160282 /* PuzzleOneViewController.swift */; };
+		A174CC431B08F37800160282 /* puzzleonesecond.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A174CC401B08F37800160282 /* puzzleonesecond.jpg */; };
+		A174CC441B08F37800160282 /* puzzleonethird.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A174CC411B08F37800160282 /* puzzleonethird.jpg */; };
+		A174CC451B08F37800160282 /* puzzleonefirst.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A174CC421B08F37800160282 /* puzzleonefirst.jpg */; };
+		A174CC4A1B08F7AE00160282 /* puzzle2third.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A174CC471B08F7AE00160282 /* puzzle2third.jpg */; };
+		A174CC4B1B08F7AE00160282 /* puzzle2first.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A174CC481B08F7AE00160282 /* puzzle2first.jpg */; };
+		A174CC4D1B08F7FF00160282 /* PuzzleTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A174CC4C1B08F7FF00160282 /* PuzzleTwoViewController.swift */; };
+		A174CC4F1B08FA7E00160282 /* puzzle22nd.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A174CC4E1B08FA7E00160282 /* puzzle22nd.jpg */; };
+		A174CC531B08FF8900160282 /* puzzle3first.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A174CC501B08FF8900160282 /* puzzle3first.jpg */; };
+		A174CC541B08FF8900160282 /* puzzle3second.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A174CC511B08FF8900160282 /* puzzle3second.jpg */; };
+		A174CC551B08FF8900160282 /* puzzle3third.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A174CC521B08FF8900160282 /* puzzle3third.jpg */; };
+		A174CC571B09000A00160282 /* PuzzleThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A174CC561B09000A00160282 /* PuzzleThreeViewController.swift */; };
 		C4E3F5931B04ED7100718A5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E3F5921B04ED7100718A5B /* AppDelegate.swift */; };
 		C4E3F5951B04ED7100718A5B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E3F5941B04ED7100718A5B /* ViewController.swift */; };
 		C4E3F5981B04ED7100718A5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4E3F5961B04ED7100718A5B /* Main.storyboard */; };
@@ -29,6 +41,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A174CC3E1B08E7DC00160282 /* PuzzleOneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PuzzleOneViewController.swift; path = ../PuzzleOneViewController.swift; sourceTree = "<group>"; };
+		A174CC401B08F37800160282 /* puzzleonesecond.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = puzzleonesecond.jpg; sourceTree = "<group>"; };
+		A174CC411B08F37800160282 /* puzzleonethird.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = puzzleonethird.jpg; sourceTree = "<group>"; };
+		A174CC421B08F37800160282 /* puzzleonefirst.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = puzzleonefirst.jpg; sourceTree = "<group>"; };
+		A174CC471B08F7AE00160282 /* puzzle2third.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = puzzle2third.jpg; sourceTree = "<group>"; };
+		A174CC481B08F7AE00160282 /* puzzle2first.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = puzzle2first.jpg; sourceTree = "<group>"; };
+		A174CC4C1B08F7FF00160282 /* PuzzleTwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PuzzleTwoViewController.swift; path = ../PuzzleTwoViewController.swift; sourceTree = "<group>"; };
+		A174CC4E1B08FA7E00160282 /* puzzle22nd.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = puzzle22nd.jpg; sourceTree = "<group>"; };
+		A174CC501B08FF8900160282 /* puzzle3first.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = puzzle3first.jpg; sourceTree = "<group>"; };
+		A174CC511B08FF8900160282 /* puzzle3second.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = puzzle3second.jpg; sourceTree = "<group>"; };
+		A174CC521B08FF8900160282 /* puzzle3third.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = puzzle3third.jpg; sourceTree = "<group>"; };
+		A174CC561B09000A00160282 /* PuzzleThreeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PuzzleThreeViewController.swift; sourceTree = "<group>"; };
 		C4E3F58D1B04ED7100718A5B /* App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4E3F5911B04ED7100718A5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4E3F5921B04ED7100718A5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -88,9 +112,21 @@
 				C4E3F5B41B04F3FD00718A5B /* QuizOneViewController.swift */,
 				C4E3F5B61B04F48B00718A5B /* QuizTwoViewController.swift */,
 				C4E3F5B81B04F4C800718A5B /* QuizThreeViewController.swift */,
+				A174CC3E1B08E7DC00160282 /* PuzzleOneViewController.swift */,
+				A174CC4C1B08F7FF00160282 /* PuzzleTwoViewController.swift */,
+				A174CC561B09000A00160282 /* PuzzleThreeViewController.swift */,
 				C4E3F5961B04ED7100718A5B /* Main.storyboard */,
 				C4E3F5991B04ED7100718A5B /* Images.xcassets */,
 				C4E3F59B1B04ED7100718A5B /* LaunchScreen.xib */,
+				A174CC501B08FF8900160282 /* puzzle3first.jpg */,
+				A174CC511B08FF8900160282 /* puzzle3second.jpg */,
+				A174CC521B08FF8900160282 /* puzzle3third.jpg */,
+				A174CC4E1B08FA7E00160282 /* puzzle22nd.jpg */,
+				A174CC471B08F7AE00160282 /* puzzle2third.jpg */,
+				A174CC481B08F7AE00160282 /* puzzle2first.jpg */,
+				A174CC401B08F37800160282 /* puzzleonesecond.jpg */,
+				A174CC411B08F37800160282 /* puzzleonethird.jpg */,
+				A174CC421B08F37800160282 /* puzzleonefirst.jpg */,
 				C4E3F5901B04ED7100718A5B /* Supporting Files */,
 			);
 			path = App;
@@ -202,7 +238,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4E3F5981B04ED7100718A5B /* Main.storyboard in Resources */,
+				A174CC4B1B08F7AE00160282 /* puzzle2first.jpg in Resources */,
 				C4E3F59D1B04ED7100718A5B /* LaunchScreen.xib in Resources */,
+				A174CC431B08F37800160282 /* puzzleonesecond.jpg in Resources */,
+				A174CC531B08FF8900160282 /* puzzle3first.jpg in Resources */,
+				A174CC4F1B08FA7E00160282 /* puzzle22nd.jpg in Resources */,
+				A174CC451B08F37800160282 /* puzzleonefirst.jpg in Resources */,
+				A174CC551B08FF8900160282 /* puzzle3third.jpg in Resources */,
+				A174CC441B08F37800160282 /* puzzleonethird.jpg in Resources */,
+				A174CC4A1B08F7AE00160282 /* puzzle2third.jpg in Resources */,
+				A174CC541B08FF8900160282 /* puzzle3second.jpg in Resources */,
 				C4E3F59A1B04ED7100718A5B /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,8 +269,11 @@
 				C4E3F5B71B04F48B00718A5B /* QuizTwoViewController.swift in Sources */,
 				C4E3F5B91B04F4C800718A5B /* QuizThreeViewController.swift in Sources */,
 				C4E3F5B51B04F3FD00718A5B /* QuizOneViewController.swift in Sources */,
+				A174CC571B09000A00160282 /* PuzzleThreeViewController.swift in Sources */,
+				A174CC3F1B08E7DC00160282 /* PuzzleOneViewController.swift in Sources */,
 				C4E3F5951B04ED7100718A5B /* ViewController.swift in Sources */,
 				C4E3F5931B04ED7100718A5B /* AppDelegate.swift in Sources */,
+				A174CC4D1B08F7FF00160282 /* PuzzleTwoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,6 +401,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -363,6 +412,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -421,6 +471,7 @@
 				C4E3F5AE1B04ED7100718A5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C4E3F5AF1B04ED7100718A5B /* Build configuration list for PBXNativeTarget "AppTests" */ = {
 			isa = XCConfigurationList;
@@ -429,6 +480,7 @@
 				C4E3F5B11B04ED7100718A5B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="slZ-Jk-RtJ">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <scenes>
@@ -142,10 +143,10 @@
             </objects>
             <point key="canvasLocation" x="729" y="-132"/>
         </scene>
-        <!--View Controller-->
+        <!--Puzzle Three View Controller-->
         <scene sceneID="Qqa-vK-oKb">
             <objects>
-                <viewController id="UvI-uU-Kho" sceneMemberID="viewController">
+                <viewController id="UvI-uU-Kho" customClass="PuzzleThreeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Bja-Qi-kEp"/>
                         <viewControllerLayoutGuide type="bottom" id="wfS-4g-7oi"/>
@@ -154,28 +155,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Puzzle 3" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iOT-R8-eKy">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="puzzle3first.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Bdl-29-x8j">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="168" y="78" width="65" height="21"/>
+                                    <rect key="frame" x="0.0" y="64" width="414" height="230"/>
                                 </variation>
-                            </label>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="puzzle3second.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="oDI-9g-e3i">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="291" width="414" height="234"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="puzzle3third.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="F51-dv-gM4">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="524" width="414" height="212"/>
+                                </variation>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="iOT-R8-eKy"/>
+                                <exclude reference="Bdl-29-x8j"/>
+                                <exclude reference="oDI-9g-e3i"/>
+                                <exclude reference="F51-dv-gM4"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
-                                <include reference="iOT-R8-eKy"/>
+                                <include reference="Bdl-29-x8j"/>
+                                <include reference="oDI-9g-e3i"/>
+                                <include reference="F51-dv-gM4"/>
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="image7" destination="Bdl-29-x8j" id="mDG-JE-zG0"/>
+                        <outlet property="image8" destination="oDI-9g-e3i" id="iNL-Ir-31N"/>
+                        <outlet property="image9" destination="F51-dv-gM4" id="dgi-ad-3Wg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hPa-gh-6CZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -464,10 +483,10 @@
             </objects>
             <point key="canvasLocation" x="2104.5" y="-180"/>
         </scene>
-        <!--View Controller-->
+        <!--Puzzle Two View Controller-->
         <scene sceneID="Br7-Qn-8qx">
             <objects>
-                <viewController id="WBk-RE-cAC" sceneMemberID="viewController">
+                <viewController id="WBk-RE-cAC" customClass="PuzzleTwoViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="If9-MA-C7e"/>
                         <viewControllerLayoutGuide type="bottom" id="ktI-N2-bF0"/>
@@ -485,28 +504,57 @@
                                     <rect key="frame" x="168" y="79" width="65" height="21"/>
                                 </variation>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="puzzle2first.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ddL-vn-2BN">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="64" width="414" height="234"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="puzzle22nd.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="NiL-mw-DCd">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="296" width="414" height="228"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="puzzle2third.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Nek-lw-Cw5">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="519" width="414" height="217"/>
+                                </variation>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="SC1-LA-3Ju"/>
+                                <exclude reference="ddL-vn-2BN"/>
+                                <exclude reference="NiL-mw-DCd"/>
+                                <exclude reference="Nek-lw-Cw5"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="SC1-LA-3Ju"/>
+                                <include reference="ddL-vn-2BN"/>
+                                <include reference="NiL-mw-DCd"/>
+                                <include reference="Nek-lw-Cw5"/>
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="image1" destination="ddL-vn-2BN" id="SF7-l2-Eiy"/>
+                        <outlet property="image2" destination="NiL-mw-DCd" id="Cfo-K3-bt3"/>
+                        <outlet property="image3" destination="Nek-lw-Cw5" id="ACh-02-8Mu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tAt-Zv-8bo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2215.5" y="-986"/>
         </scene>
-        <!--View Controller-->
+        <!--Puzzle One View Controller-->
         <scene sceneID="be3-N2-e03">
             <objects>
-                <viewController id="SNz-IB-s1S" sceneMemberID="viewController">
+                <viewController id="SNz-IB-s1S" customClass="PuzzleOneViewController" customModule="App" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DEJ-MV-pCi"/>
                         <viewControllerLayoutGuide type="bottom" id="Jhg-Yd-P2V"/>
@@ -524,20 +572,49 @@
                                     <rect key="frame" x="168" y="88" width="65" height="21"/>
                                 </variation>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="puzzleonesecond.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="5Pc-Ne-l3G">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="295" width="414" height="220"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="puzzleonethird.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="uuU-r7-FyG">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="512" width="414" height="224"/>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="puzzleonefirst.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="AEu-Z5-Ray">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="64" width="414" height="231"/>
+                                </variation>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="pGL-lg-7zF"/>
+                                <exclude reference="5Pc-Ne-l3G"/>
+                                <exclude reference="uuU-r7-FyG"/>
+                                <exclude reference="AEu-Z5-Ray"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="pGL-lg-7zF"/>
+                                <include reference="5Pc-Ne-l3G"/>
+                                <include reference="uuU-r7-FyG"/>
+                                <include reference="AEu-Z5-Ray"/>
                             </mask>
                         </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="image1" destination="AEu-Z5-Ray" id="3NQ-1I-Y80"/>
+                        <outlet property="image2" destination="5Pc-Ne-l3G" id="e6u-Ab-nlB"/>
+                        <outlet property="image3" destination="uuU-r7-FyG" id="8JG-w8-AU1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c00-4Z-sII" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -587,10 +664,12 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="41" y="306" width="299" height="53"/>
+                                    <rect key="frame" x="43" y="296" width="300" height="52"/>
                                 </variation>
                                 <connections>
+                                    <action selector="Button1Action:" destination="8bV-X6-TOV" eventType="touchUpInside" id="Gax-Ok-o6w"/>
                                     <action selector="openAlertView:" destination="8bV-X6-TOV" eventType="touchUpInside" id="MZw-fH-GQW"/>
+                                    <action selector="showAlert:" destination="8bV-X6-TOV" eventType="touchUpInside" id="kC2-3v-vJp"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="404-Yf-nVE">
@@ -609,6 +688,9 @@
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="41" y="385" width="299" height="53"/>
                                 </variation>
+                                <connections>
+                                    <action selector="Button2Action:" destination="8bV-X6-TOV" eventType="touchUpInside" id="fYC-gG-cDz"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uye-Nd-kUT">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -626,23 +708,9 @@
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="41" y="461" width="299" height="52"/>
                                 </variation>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q2A-Xe-23y">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <color key="backgroundColor" red="0.67974668559999996" green="0.47650535319999998" blue="0.1773497832" alpha="0.72999999999999998" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="10">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="41" y="537" width="299" height="52"/>
-                                </variation>
+                                <connections>
+                                    <action selector="Button3Action:" destination="8bV-X6-TOV" eventType="touchUpInside" id="dMm-ag-w1M"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How many materials were used to build Salisbury Cathedral?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LwJ-NZ-H0w">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
@@ -660,6 +728,35 @@
                                     <rect key="frame" x="41" y="111" width="299" height="137"/>
                                 </variation>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Hu-GU-c6n">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="43" y="623" width="299" height="21"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q2A-Xe-23y">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.67974668559999996" green="0.47650535319999998" blue="0.1773497832" alpha="0.72999999999999998" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="10">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="43" y="541" width="300" height="52"/>
+                                </variation>
+                                <connections>
+                                    <action selector="Button4Action:" destination="8bV-X6-TOV" eventType="touchUpInside" id="bLy-xO-wQg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -669,8 +766,9 @@
                                 <exclude reference="aiU-im-OAd"/>
                                 <exclude reference="404-Yf-nVE"/>
                                 <exclude reference="uye-Nd-kUT"/>
-                                <exclude reference="Q2A-Xe-23y"/>
                                 <exclude reference="LwJ-NZ-H0w"/>
+                                <exclude reference="7Hu-GU-c6n"/>
+                                <exclude reference="Q2A-Xe-23y"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -680,12 +778,20 @@
                                 <include reference="aiU-im-OAd"/>
                                 <include reference="404-Yf-nVE"/>
                                 <include reference="uye-Nd-kUT"/>
-                                <include reference="Q2A-Xe-23y"/>
                                 <include reference="LwJ-NZ-H0w"/>
+                                <include reference="7Hu-GU-c6n"/>
+                                <include reference="Q2A-Xe-23y"/>
                             </mask>
                         </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="Button1" destination="aiU-im-OAd" id="K9U-YT-ORc"/>
+                        <outlet property="Button2" destination="404-Yf-nVE" id="ahr-Tj-5i1"/>
+                        <outlet property="Button3" destination="uye-Nd-kUT" id="qQv-d7-Tiz"/>
+                        <outlet property="Button4" destination="Q2A-Xe-23y" id="BQ4-Im-ItK"/>
+                        <outlet property="LabelEnd" destination="7Hu-GU-c6n" id="ofj-Xj-eb0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RHI-6Q-hjp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -696,6 +802,15 @@
         <image name="Map_6" width="750" height="1334"/>
         <image name="Puzzle_Button" width="350" height="350"/>
         <image name="QM 2" width="1024" height="1024"/>
+        <image name="puzzle22nd.jpg" width="375" height="224"/>
+        <image name="puzzle2first.jpg" width="375" height="224"/>
+        <image name="puzzle2third.jpg" width="375" height="224"/>
+        <image name="puzzle3first.jpg" width="375" height="224"/>
+        <image name="puzzle3second.jpg" width="375" height="224"/>
+        <image name="puzzle3third.jpg" width="375" height="224"/>
+        <image name="puzzleonefirst.jpg" width="750" height="333"/>
+        <image name="puzzleonesecond.jpg" width="750" height="333"/>
+        <image name="puzzleonethird.jpg" width="750" height="333"/>
         <image name="quiz 1 new" width="750" height="1334"/>
         <image name="quiz 2 new" width="750" height="1334"/>
         <image name="quiz 3 new" width="750" height="1334"/>
