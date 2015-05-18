@@ -385,6 +385,9 @@
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="32" y="324" width="300" height="52"/>
                                 </variation>
+                                <connections>
+                                    <action selector="buttonsailsburyaction:" destination="JbW-b7-JLf" eventType="touchUpInside" id="2Xt-Bt-9Uc"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dj8-rN-b2E">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -453,6 +456,15 @@
                                     <rect key="frame" x="32" y="119" width="300" height="136"/>
                                 </variation>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ha1-UU-xOa">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="32" y="636" width="300" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -464,6 +476,7 @@
                                 <exclude reference="1Xy-Tw-SEO"/>
                                 <exclude reference="PD5-Vh-PKf"/>
                                 <exclude reference="zq9-PR-ra0"/>
+                                <exclude reference="Ha1-UU-xOa"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -475,9 +488,21 @@
                                 <include reference="1Xy-Tw-SEO"/>
                                 <include reference="PD5-Vh-PKf"/>
                                 <include reference="zq9-PR-ra0"/>
+                                <include reference="Ha1-UU-xOa"/>
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="LabelEnd" destination="Ha1-UU-xOa" id="DWF-wl-7cb"/>
+                        <outlet property="buttondereham" destination="dj8-rN-b2E" id="4Mb-58-cy6"/>
+                        <outlet property="buttonderehamaction" destination="dj8-rN-b2E" id="jOG-iI-olc"/>
+                        <outlet property="buttondorset" destination="PD5-Vh-PKf" id="RVt-EF-DcC"/>
+                        <outlet property="buttondorsetaction" destination="PD5-Vh-PKf" id="rfh-ya-xeI"/>
+                        <outlet property="buttonelias" destination="Iyy-zY-eXM" id="Frv-wm-REP"/>
+                        <outlet property="buttonsailsbury" destination="Iyy-zY-eXM" id="BQf-Gd-fWT"/>
+                        <outlet property="buttonwiltshire" destination="1Xy-Tw-SEO" id="Gdg-B0-Oa5"/>
+                        <outlet property="buttonwiltshireaction" destination="1Xy-Tw-SEO" id="7Sg-Nm-V35"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sQH-H6-JQk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -728,15 +753,6 @@
                                     <rect key="frame" x="41" y="111" width="299" height="137"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Hu-GU-c6n">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="43" y="623" width="299" height="21"/>
-                                </variation>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q2A-Xe-23y">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <color key="backgroundColor" red="0.67974668559999996" green="0.47650535319999998" blue="0.1773497832" alpha="0.72999999999999998" colorSpace="calibratedRGB"/>
@@ -767,7 +783,6 @@
                                 <exclude reference="404-Yf-nVE"/>
                                 <exclude reference="uye-Nd-kUT"/>
                                 <exclude reference="LwJ-NZ-H0w"/>
-                                <exclude reference="7Hu-GU-c6n"/>
                                 <exclude reference="Q2A-Xe-23y"/>
                             </mask>
                         </variation>
@@ -779,7 +794,6 @@
                                 <include reference="404-Yf-nVE"/>
                                 <include reference="uye-Nd-kUT"/>
                                 <include reference="LwJ-NZ-H0w"/>
-                                <include reference="7Hu-GU-c6n"/>
                                 <include reference="Q2A-Xe-23y"/>
                             </mask>
                         </variation>
@@ -790,12 +804,11 @@
                         <outlet property="Button2" destination="404-Yf-nVE" id="ahr-Tj-5i1"/>
                         <outlet property="Button3" destination="uye-Nd-kUT" id="qQv-d7-Tiz"/>
                         <outlet property="Button4" destination="Q2A-Xe-23y" id="BQ4-Im-ItK"/>
-                        <outlet property="LabelEnd" destination="7Hu-GU-c6n" id="ofj-Xj-eb0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RHI-6Q-hjp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="768" y="-986"/>
+            <point key="canvasLocation" x="747" y="-992"/>
         </scene>
     </scenes>
     <resources>
